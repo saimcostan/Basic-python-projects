@@ -1,7 +1,7 @@
 import random
 while True:
     #get input from user
-    choice=input("Roll the dice?(y/n): ")
+    choice=input("Roll the dice?(y/n): ").lower()
     if choice=="y":
         #if user says yes then generate two random numbers
         Ans1=str(random.randint(1,6))
