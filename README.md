@@ -1,1 +1,1 @@
-# testing
+# Basic Python projects for beginners
