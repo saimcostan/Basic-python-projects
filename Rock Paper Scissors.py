@@ -23,6 +23,7 @@ while True:
     #selecting computer choice
     Num=random.randint(1,3)
     
+    
     if Num==1:
         CompChoice="r"
         print("Computer chose 🪨")
