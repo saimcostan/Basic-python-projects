@@ -29,8 +29,10 @@ while True:
     else:
         print(f"Congrats! you guessed it in {Attempts} attempts")
         break
-    #informing user about attempts remaining
+
+    #informing user about attempts remaining or ending the game if no attempts left
     if AttemptsRemaining>0:
         print(f"You have {AttemptsRemaining} guesses left")
     else:
         print("You have no guesses remaining, Better luck next time")
+        break
