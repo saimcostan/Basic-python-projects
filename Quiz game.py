@@ -17,20 +17,24 @@ Answers=("B","C","A","D")
 Guess=[]
 QuestionNumber=0
 Correct=0
+
+#starting a loop for displaying questions
 for Question in Questions:
     
     print(f"Q{QuestionNumber}.",Question)
 
-
+    #starting a loop for displaying options
     for Option in Options[QuestionNumber]:
         print(Option)
 
     print()
 
+    #Asking user input for their choice and adding it to the guess list
     UserGuess=input("Enter your answer (A,B,C,D): ").upper()
 
     Guess.append(UserGuess)
 
+    #checking if the guess matches the answer
     if Answers[QuestionNumber]==UserGuess:
         print("CORRECT!")
         Correct+=1
@@ -41,9 +45,11 @@ for Question in Questions:
     print()
 
     QuestionNumber+=1
-        
+
+#printing how many answers the user got correct       
 print(f"You got {Correct} answers correct")
 
+#printing a list of correct options
 AnswerList="Answers="
 
 for Answer in Answers:
@@ -51,6 +57,7 @@ for Answer in Answers:
 
 print(AnswerList)
 
+#printing a list of user guesses
 GuessList="Your Guesses="
 
 for YourGuess in Guess:
