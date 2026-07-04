@@ -2,7 +2,7 @@ import random
 import string
 
 #making a string of all possible string characters using the string builtin module
-chars=" "+string.punctuation+string.ascii_letters
+chars=" "+string.punctuation+string.ascii_letters+string.digits
 
 #creating a list of all possible string values with the help of the char string
 chars=list(chars)
